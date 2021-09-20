@@ -186,6 +186,6 @@ async def seek_playout(client, m: Message):
                 title=f"<b>Stream Using [Url]({data['file']}</b>)"
             else:
                 title=f"<b>Streaming Startup [stream]({Config.STREAM_URL})</b>"
-        await m.reply(f"🎸{title}", reply_markup=await get_buttons(), disable_web_page_preview=True)
+        await m.reply(f"👾{title}", reply_markup=await get_buttons(), disable_web_page_preview=True)
     else:
         await m.reply('No time specified')
